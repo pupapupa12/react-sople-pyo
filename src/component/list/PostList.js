@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import PostListItem from "./PostListItem";
 
+//"styled(import된 styled-components사용).div``" -> 약속된 형식
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -15,6 +16,7 @@ const Wrapper = styled.div`
 
 function PostList(props) {
     const { posts, onClickItem } = props;
+    ㄴ;
 
     return (
         <Wrapper>
