@@ -56,14 +56,14 @@ function PostViewPage(props) {
 
     const [comment, setComment] = useState("");
 
-    return(
+    return (
         <Wrapper>
             <Container>
                 <Button
-                title="뒤로 가기"
-                onClick-{() => {
-                    navigate("/");
-                }}
+                    title="뒤로 가기"
+                    onClick={() => {
+                        navigate("/");
+                    }}
                 />
                 <PostContainer>
                     <TitleText>{post.title}</TitleText>
@@ -74,17 +74,17 @@ function PostViewPage(props) {
                 <CommentList comments={post.comments} />
 
                 <TextInput
-                height={40}
-                value={comment}
-                onChange={(event) => {
-                    setComment(event.target.value);
-                }}
+                    height={40}
+                    value={comment}
+                    onChange={(event) => {
+                        setComment(event.target.value);
+                    }}
                 />
                 <Button
-                title="댓글 작성하기"
-                onClick={() => {
-                    navigate("/");
-                }}
+                    title="댓글 작성하기"
+                    onClick={() => {
+                        navigate("/");
+                    }}
                 />
             </Container>
         </Wrapper>
