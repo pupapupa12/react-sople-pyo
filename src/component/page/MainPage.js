@@ -15,12 +15,12 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-width; 100%;
-max-width: 720px;
+    width: 100%;
+    max-width: 720px;
 
-:not(:last-child){
-    margin-bottom: 16px;
-}
+    :not(:last-child) {
+        margin-bottom: 16px;
+    }
 `;
 
 function MainPage(props) {
