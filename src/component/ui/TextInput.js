@@ -7,6 +7,9 @@ const StyledTextarea = styled.textarea`
     padding: 16px;
     font-size: 16px;
     line-height: 20px;
+    border: 2px outset lightsteelblue;
+    opacity: 90%;
+    border-radius: 5px;
 `;
 
 function TextInput(props) {

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components";
@@ -7,12 +8,12 @@ import Button from "../ui/Button";
 import data from "../../data.json";
 
 const Wrapper = styled.div`
-    padding: 16px;
+    padding: 30px;
     width: calc(100% - 32px);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
 `;
 
 const Container = styled.div`
@@ -25,36 +26,41 @@ const Container = styled.div`
 `;
 
 const PostContainer = styled.div`
-    padding: 8px 16px;
-    border: 1px solid grey;
+    padding: 10px 24px;
+    border: 0px solid grey;
     border-radius: 8px;
+    background: #f8f9fa;
 `;
 
 const TitleText = styled.p`
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 700;
+    color: #11609c;
 `;
 
 const ContextText = styled.p`
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 30px;
     white-space: pre-wrap;
 `;
 
 const CommentLabel = styled.p`
+    padding: 20px 0px 0px 10px;
     font-size: 16px;
     font-weight: 500;
+    color: #495057;
+    opacity: 70%;
 `;
 
 function PostViewPage(props) {
     const navigate = useNavigate();
-    const { postID } = useParams();
+    const { postId } = useParams();
 
     const post = data.find((item) => {
-        return (item.id = postId);
+        return item.id == postId;
     });
 
-    const [comment, setComment] = useState("");
+    const [comment, setComment] = useState();
 
     return (
         <Wrapper>

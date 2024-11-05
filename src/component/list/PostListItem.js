@@ -2,24 +2,26 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-    width: calc(100%-32px);
-    padding: 16px;
+    /* width: calc(100%-32px); */
+    width: 100%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    border: 1px solid grey;
+    border: 1px solid #f8f9fa;
     border-radius: 8px;
     cursor: pointer;
-    background: white;
+    background: #f8f9fa;
     :hover {
-        background: lightgrey;
+        background: #11609c;
+        color: #f8f9fa;
     }
 `;
 
 const TitleText = styled.p`
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
 `;
 
 function PostListItem(props) {

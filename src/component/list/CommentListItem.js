@@ -3,22 +3,27 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
     width: calc(100%-32px);
-    padding: 8px 16px;
+    padding: 6px 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    border: 1px solid grey;
-    border-radius: 8px;
+    border: 1px dashed #ced4da;
+    border-radius: 3px;
+    /* border-opacity: 30%; */
     cursor: pointer;
     background: white;
-    :hover {
-        background: lightgrey;
-    }
+    cursor: pointer;
+    /* :hover {
+        /* border: 1px dashed #11609c; */
+        /* background: #11609c; */
+        /* color: #f8f9fa; */
+    } */
 `;
 
 const ConstText = styled.p`
-    font-size: 16px;
+    color: 343a40;
+    font-size: 14px;
     white-space: pre-wrap;
 `;
 

@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    color: #343a40;
 
     :not(:last-child) {
         margin-bottom: 16px;
@@ -16,7 +17,6 @@ const Wrapper = styled.div`
 
 function PostList(props) {
     const { posts, onClickItem } = props;
-    ㄴ;
 
     return (
         <Wrapper>
