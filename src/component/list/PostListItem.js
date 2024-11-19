@@ -32,7 +32,9 @@ function PostListItem(props) {
 
     return (
         <Wrapper onClick={onClick}>
-            <TitleText>{post.title}</TitleText>
+            <TitleText>
+                {post.title}/Index: {index}
+            </TitleText>
         </Wrapper>
     );
 }

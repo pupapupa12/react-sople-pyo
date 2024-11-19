@@ -41,6 +41,7 @@ function MainPage(props) {
                 />
 
                 <PostList
+                    // key={post.id}
                     posts={data}
                     onClickItem={(item) => {
                         navigate(`/post/${item.id}`);

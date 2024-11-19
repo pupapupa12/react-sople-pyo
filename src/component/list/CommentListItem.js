@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-    width: calc(100%-32px);
+    width: calc();
     padding: 6px 20px;
     display: flex;
     flex-direction: column;
@@ -13,6 +13,9 @@ const Wrapper = styled.div`
     /* border-opacity: 30%; */
     cursor: pointer;
     background: white;
+    :hover {
+        border: 0px;
+    }
 `;
 
 const ConstText = styled.p`

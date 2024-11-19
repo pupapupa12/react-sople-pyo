@@ -9,7 +9,7 @@ const HeaderContainer = styled.div`
     position: relative;
     width: 100%;
     height: 300px;
-    cursor: pointer;
+    cursor: pointer; /* 컨테이너 클릭 가능 */
 `;
 
 const MainImg = styled.img`
@@ -19,8 +19,7 @@ const MainImg = styled.img`
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
-    cursor: pointer; /* 클릭 가능하도록 포인터 설정 */
+    z-index: 1; /* 가장 뒤에 배치 */
 `;
 
 const GradientOverlay = styled.div`
@@ -34,7 +33,7 @@ const GradientOverlay = styled.div`
         rgba(0, 0, 0, 1) 0%,
         rgba(0, 0, 0, 0) 90%
     );
-    z-index: 2;
+    z-index: 2; /* 이미지 위에 배치 */
 `;
 
 const MainTitleText = styled.p`
@@ -45,7 +44,7 @@ const MainTitleText = styled.p`
     font-weight: bold;
     opacity: 90%;
     color: white;
-    z-index: 3;
+    z-index: 3; /* 텍스트는 최상단 */
     margin: 0;
 `;
 
@@ -53,15 +52,13 @@ function Header() {
     const navigate = useNavigate();
 
     return (
-        <HeaderContainer>
+        <HeaderContainer
+            onClick={() => navigate("/")} /* 클릭 이벤트를 컨테이너에 적용 */
+        >
             <MainImg
                 src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*XCgoYU9sqt95P8J0.png"
                 alt="Main Banner"
-                onClick={() =>
-                    navigate("/")
-                } /* 클릭 이벤트로 메인 페이지 이동 */
             />
-            console.log(1);
             <GradientOverlay />
             <MainTitleText>소플의 미니블로그</MainTitleText>
         </HeaderContainer>

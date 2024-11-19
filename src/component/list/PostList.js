@@ -31,6 +31,7 @@ function PostList(props) {
                     <PostListItem
                         key={post.id}
                         post={post}
+                        index={index + 1} // 1부터 시작하는 인덱스 전달
                         onClick={() => {
                             onClickItem(post);
                         }}
