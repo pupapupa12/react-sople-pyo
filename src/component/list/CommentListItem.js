@@ -13,12 +13,6 @@ const Wrapper = styled.div`
     /* border-opacity: 30%; */
     cursor: pointer;
     background: white;
-    cursor: pointer;
-    /* :hover {
-        /* border: 1px dashed #11609c; */
-        /* background: #11609c; */
-        /* color: #f8f9fa; */
-    } */
 `;
 
 const ConstText = styled.p`

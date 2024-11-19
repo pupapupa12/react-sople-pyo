@@ -4,6 +4,12 @@ import PostListItem from "./PostListItem";
 
 //"styled(import된 styled-components사용).div``" -> 약속된 형식
 const Wrapper = styled.div`
+    transition: background 0.3s, color 0.3s;
+
+    :hover {
+        background: #11609c; /* 호버 시 배경색 변경 */
+        color: #f8f9fa; /* 호버 시 텍스트 색상 변경 */
+    }
     display: flex;
     flex-direction: column;
     align-items: flex-start;

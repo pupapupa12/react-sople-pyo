@@ -9,7 +9,7 @@ import data from "../../data.json";
 
 const Wrapper = styled.div`
     padding: 30px;
-    width: calc(100% - 32px);
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -17,8 +17,8 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-    width: 100%;
-    max-width: 720px;
+    width: 90%;
+    /* max-width: 720px; */
 
     :not(:last-child) {
         margin-bottom: 16px;
