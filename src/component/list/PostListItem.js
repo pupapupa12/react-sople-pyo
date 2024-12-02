@@ -13,10 +13,10 @@ const Wrapper = styled.div`
     cursor: pointer;
     background: #f8f9fa;
     color: #080808; /* 기본 텍스트 색상 */
-    /* transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s;
     :hover {
-        background: #11609c; 호버 시 배경색 변경
-        color: #f8f9fa; 호버 시 텍스트 색상 변경 */
+        background: #11609c; /* 호버 시 배경색 변경 */
+        color: #f8f9fa; /* 호버 시 텍스트 색상 변경 */
     }
 `;
 
@@ -32,9 +32,7 @@ function PostListItem(props) {
 
     return (
         <Wrapper onClick={onClick}>
-            <TitleText>
-                {post.title}/Index: {index}
-            </TitleText>
+            <TitleText>{post.title}</TitleText>
         </Wrapper>
     );
 }
