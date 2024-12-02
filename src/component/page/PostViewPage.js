@@ -52,6 +52,12 @@ const CommentLabel = styled.p`
     opacity: 70%;
 `;
 
+const AuthorText = styled.p`
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 8px;
+`;
+
 function PostViewPage(props) {
     const navigate = useNavigate();
     const { postId } = useParams();
@@ -60,7 +66,7 @@ function PostViewPage(props) {
         return item.id == postId;
     });
 
-    const [comment, setComment] = useState();
+    const [comment, setComment] = useState("");
 
     return (
         <Wrapper>
@@ -79,6 +85,7 @@ function PostViewPage(props) {
 
                 <CommentLabel>댓글</CommentLabel>
                 <CommentList comments={post.comments} />
+                <CommentAuthor author={post.author} />
 
                 <TextInput
                     height={40}
