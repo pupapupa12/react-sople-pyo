@@ -29,7 +29,9 @@ function CommentListItem(props) {
 
     return (
         <Wrapper>
-            <ConstText>{comment.content}</ConstText>
+            <ConstText>
+                {comment.content} {author.author}
+            </ConstText>
         </Wrapper>
     );
 }

@@ -84,8 +84,8 @@ function PostViewPage(props) {
                 </PostContainer>
 
                 <CommentLabel>댓글</CommentLabel>
-                <CommentList comments={post.comments} />
-                <CommentAuthor author={post.author} />
+                <CommentList comments={post.comments} author={post.author} />
+                {/* <CommentAuthor author={post.author} /> */}
 
                 <TextInput
                     height={40}
