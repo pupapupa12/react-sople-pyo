@@ -24,15 +24,20 @@ const ConstText = styled.p`
     white-space: pre-wrap;
 `;
 
+const AuthorText = styled.p`
+    color: #6c757d;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 4px;
+`;
+
 function CommentListItem(props) {
-    const { comment } = props;
+    const { comment, author } = props;
 
     return (
         <Wrapper>
-            <ConstText>
-                {comment.content}
-                {/* {author.author} */}
-            </ConstText>
+            <ConstText>{comment.content}</ConstText>
+            <AuthorText>{comment.author}</AuthorText>
         </Wrapper>
     );
 }
