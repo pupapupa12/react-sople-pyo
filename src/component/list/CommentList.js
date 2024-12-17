@@ -29,7 +29,7 @@ function CommentList(props) {
                     <CommentListItem
                         key={comment.id}
                         comment={comment}
-                        author={author}
+                        // author={author}
                     />
                 );
             })}
